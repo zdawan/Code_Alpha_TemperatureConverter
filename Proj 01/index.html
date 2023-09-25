@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Temperature Converter Is Here...</title>
+    <link href="./Image/hot.png" rel="shortcut icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- header -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="./background (AE).mp4"
+                type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <input type="number" id="inputTemp" placeholder="Enter temperature">
+        <select id="fromUnit">
+            <option value="celsius">Celsius (C)</option>
+            <option value="fahrenheit">Fahrenheit (F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rankine">Rankie (R)</option>
+        </select>
+        <p><strong>Converts to :</strong></p> 
+        <input type="text" id="outputTemp" disabled placeholder="Result Here.">
+        <select id="toUnit">
+            <option value="celsius">Celsius (C)</option>
+            <option value="fahrenheit">Fahrenheit (F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rankine">Rankie (R)</option>
+        </select>
+        <br><br>
+        <div class="button-borders">
+            <button onclick="convertTemperature()" class="primary-button"> Convert
+            </button>
+        </div>
+        
+    </div>
+</body>
+
+<!-- if-statement is used -->
+<!-- <script src="main.js"></script> -->
+
+<script src="main2.js"></script>
+</html>
